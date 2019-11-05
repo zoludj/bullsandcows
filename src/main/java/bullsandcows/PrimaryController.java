@@ -100,6 +100,7 @@ public class PrimaryController {
         return result;
     }
 
+
     public void doTurn(ActionEvent actionEvent) {
         turnCounter++;
         int n1 = num1.getValue();
@@ -113,6 +114,7 @@ public class PrimaryController {
         var cows = calculateCows(userNumbers);
         var bulls = calculateBulls(userNumbers);
 
+
         Turn turn = new Turn();
         turn.setGuess(guess);
         turn.setTurnNr(turnCounter);
@@ -125,5 +127,7 @@ public class PrimaryController {
         turns.sort();
 
         System.out.println("Button pressed! " + guess);
+
+
     }
 }
